@@ -1,0 +1,54 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ehcache.xsd"
+         updateCheck="false">
+    <diskStore path="/home/enoel/Desarrollo/Cache/ehcache"/>
+    
+    <cache name="listaUrlsIndexadas"
+               maxElementsInMemory="1000"
+               eternal="false"
+               timeToIdleSeconds="300"
+               timeToLiveSeconds="600"
+               overflowToDisk="true"
+    />
+
+    <cache name="listaAudioLibros"
+           maxElementsInMemory="1000"
+           eternal="false"
+           timeToIdleSeconds="300"
+           timeToLiveSeconds="600"
+           overflowToDisk="true"
+    />
+
+    <cache name="listaConvertidosPDF"
+           maxElementsInMemory="1000"
+           eternal="false"
+           timeToIdleSeconds="300"
+           timeToLiveSeconds="600"
+           overflowToDisk="true"
+    />
+
+    <cache name="cantIndexadas"
+           maxElementsInMemory="1000"
+           eternal="false"
+           timeToIdleSeconds="300"
+           timeToLiveSeconds="600"
+           overflowToDisk="true"
+    />
+
+    <cache name="bibliotecas"
+           maxElementsInMemory="1000"
+           eternal="false"
+           timeToIdleSeconds="300"
+           timeToLiveSeconds="600"
+           overflowToDisk="true"
+    />
+
+    <cache name="listaDocIndexadas"
+           maxElementsInMemory="1000000"
+           eternal="false"
+           timeToIdleSeconds="300"
+           timeToLiveSeconds="600"
+           overflowToDisk="true"
+    />
+
+</ehcache>

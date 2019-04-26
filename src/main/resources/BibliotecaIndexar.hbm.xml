@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping
+        xmlns="http://www.hibernate.org/xsd/orm/hbm"
+>
+    <class name="cu.cupet.cubalub.observatorio.model.utiles.TBibliotecaIndexar" table="tb_biblioteca">
+        <id name="id_biblioteca">
+            <generator class="native"/>
+        </id>
+
+        <property name="url" not-null="true" type="java.lang.String" unique="true"/>
+
+        <set name="lista_urls">
+            <key column="id_biblioteca" not-null="true"/>
+            <one-to-many class="cu.cupet.cubalub.observatorio.model.utiles.TUrlIndexar"/>
+        </set>
+
+    </class>
+</hibernate-mapping>
